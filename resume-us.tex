@@ -1,0 +1,61 @@
+\documentclass[letterpaper,10pt]{article}
+\input{resume-style.tex}
+
+\begin{document}
+
+\resumeHeader
+  {Anton Serdyuchenko}
+  {Software Engineer | DevOps / AI Infrastructure}
+  {\href{mailto:anton415@gmail.com}{anton415@gmail.com} \sep
+   \href{https://www.linkedin.com/in/antonserdyuchenko}{LinkedIn} \sep
+   \href{https://github.com/anton415}{GitHub} \sep
+   \href{https://serdyuchenko.com}{serdyuchenko.com}}
+
+\section{Summary}
+\small
+Software engineer with 9 years of experience developing and maintaining enterprise software at the Bank of Russia. Core work includes Java and Vaadin feature development, business-logic fixes, legacy refactoring, JUnit testing, code review, SQL, and application diagnostics. Building practical DevOps and AgentOps evidence through \textit{finance-lab}, an open-source engineering lab for coding-agent workflows, CI, evaluations, workflow automation, and human approval gates.
+
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Bank of Russia}{Oct 2017 -- Present}
+    {Java Software Engineer (official title: Leading Engineer)}{Russia}
+    \resumeItemListStart
+      \resumeItem{Develop and maintain features in a long-lived enterprise application, working primarily with Java and Vaadin across business logic and UI behavior.}
+      \resumeItem{Implemented a cross-layer refactoring of a core business workflow across domain logic, UI, services, and workflow orchestration, migrating affected functionality to an updated domain model and validating changes with JUnit and manual testing.}
+      \resumeItem{Developed reusable Vaadin components for repeated UI patterns used across multiple application forms.}
+      \resumeItem{Fix business-logic defects and refactor legacy code; use SQL and application diagnostics to investigate and verify behavior.}
+      \resumeItem{Review peer changes and write or maintain JUnit tests as part of regular development and verification work.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Selected Project}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {finance-lab}
+    {\href{https://github.com/anton415/finance-lab}{github.com/anton415/finance-lab}}
+    {2026 -- Present}
+    \resumeItemListStart
+      \resumeItem{Created an open-source personal-finance application and engineering lab focused on reliable AI-agent-assisted software development (AgentOps).}
+      \resumeItem{Established a human-gated delivery workflow with acceptance criteria, GitHub Actions CI, advisory coding-agent PR reviews, and explicit review boundaries.}
+      \resumeItem{Built the project around a documented evaluation framework with 12 candidate coding-agent tasks, one manually calibrated grader, and separate application-test, agent-task, and grader-calibration evidence.}
+      \resumeItem{Uses Python automation for repository workflow control and safe dry-run/live separation so issue and PR state changes remain auditable and human-approved.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Skills}
+\resumeLine{Software Engineering}{Java, Vaadin, SQL, JUnit, Git/GitLab, code review, debugging, legacy refactoring}
+\resumeLine{Backend / Workflow}{PostgreSQL, Camunda/BPMN, Mockito, Maven}
+\resumeLine{Delivery / Platform}{GitHub Actions, CI/CD, Linux, Python automation (basic)}
+\resumeLine{AI Engineering}{coding-agent workflows, evaluation design, human approval gates, AgentOps experiments}
+
+\section{Education \& Selected Training}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Moscow Aviation Institute (MAI)}{2022}
+    {Master's degree, Management -- Economic Security, Faculty of Information Technologies}{Moscow, Russia}
+\resumeSubHeadingListEnd
+\small
+\textbf{Selected training:} Camunda Academy -- BPMN Overview; Anthropic -- AI Fluency Framework \& Foundations; Anthropic -- Claude Code in Action.
+
+\end{document}
