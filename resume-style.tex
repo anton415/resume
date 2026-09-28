@@ -1,0 +1,70 @@
+% Shared formatting for Anton Serdyuchenko's resumes.
+% Compact single-column layout designed for readability and ATS-friendly text extraction.
+
+\usepackage{fontspec}
+\setmainfont{DejaVu Serif}
+\usepackage{geometry}
+\geometry{left=0.58in,right=0.58in,top=0.48in,bottom=0.48in}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{ragged2e}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\urlstyle{same}
+\raggedbottom
+\setlength{\emergencystretch}{2em}
+
+\titleformat{\section}
+  {\vspace{-2pt}\large\bfseries\raggedright}
+  {}{0em}{}
+  [\titlerule\vspace{-4pt}]
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+
+\newcommand{\resumeHeader}[3]{%
+  \begin{center}
+    {\LARGE\bfseries #1}\\[-1pt]
+    {\normalsize\bfseries #2}\\[2pt]
+    {\small #3}
+  \end{center}
+  \vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{%
+  \begin{itemize}[leftmargin=0pt,label={},itemsep=5pt,topsep=0pt,parsep=0pt,partopsep=0pt]
+}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeSubheading}[4]{%
+  \item
+  \begin{tabularx}{\textwidth}{X >{\raggedleft\arraybackslash}p{0.22\textwidth}}
+    \textbf{#1} & {\small #2} \\
+    \textit{#3} & \textit{\small #4}
+  \end{tabularx}
+  \vspace{-2pt}
+}
+
+\newcommand{\resumeProjectHeading}[3]{%
+  \item
+  \begin{tabularx}{\textwidth}{X r}
+    \textbf{#1} \hspace{0.4em}{\small #2} & {\small #3}
+  \end{tabularx}
+  \vspace{-2pt}
+}
+
+\newcommand{\resumeItemListStart}{%
+  \begin{itemize}[leftmargin=15pt,label=\textbullet,itemsep=1.5pt,topsep=2pt,parsep=0pt,partopsep=0pt]
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+\newcommand{\resumeItem}[1]{\item {\small #1}}
+
+\newcommand{\resumeLine}[2]{%
+  \textbf{#1}: {\small #2}\\[-1pt]
+}
+
+\newcommand{\sep}{\hspace{0.45em}\textbar\hspace{0.45em}}
