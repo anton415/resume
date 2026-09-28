@@ -1,0 +1,69 @@
+\documentclass[a4paper,10pt]{article}
+\input{resume-style.tex}
+
+\begin{document}
+
+\resumeHeader
+  {Антон Сердюченко}
+  {Java-разработчик | DevOps / AI Infrastructure}
+  {\href{mailto:anton415@gmail.com}{anton415@gmail.com} \sep
+   \href{https://www.linkedin.com/in/antonserdyuchenko}{LinkedIn} \sep
+   \href{https://github.com/anton415}{GitHub} \sep
+   \href{https://serdyuchenko.com}{serdyuchenko.com}}
+
+\section{О СЕБЕ}
+\small
+Java-разработчик с 9-летним опытом разработки и сопровождения корпоративного ПО в Банке России. Основная работа: разработка на Java и Vaadin, исправление бизнес-логики, рефакторинг legacy-кода, JUnit-тесты, code review, SQL и диагностика поведения приложения. Параллельно развиваю практические навыки DevOps и AgentOps в open-source проекте \textit{finance-lab}: CI, автоматизация жизненного цикла PR, code review с coding agents, evals и human approval gates.
+
+\section{ОПЫТ РАБОТЫ}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Банк России}{10.2017 -- настоящее время}
+    {Ведущий инженер (Java-разработчик)}{Россия}
+    \resumeItemListStart
+      \resumeItem{Разрабатываю и поддерживаю функциональность долгоживущего корпоративного приложения, в основном на Java и Vaadin, включая бизнес-логику и UI.}
+      \resumeItem{Реализовал сквозной рефакторинг одного из ключевых бизнес-процессов: изменения доменной логики, UI, сервисов и workflow orchestration с переходом затронутой функциональности на обновленную доменную модель; проверил изменения JUnit- и ручными тестами.}
+      \resumeItem{Разработал переиспользуемые Vaadin-компоненты для повторяющихся UI-паттернов в нескольких формах приложения.}
+      \resumeItem{Исправляю дефекты бизнес-логики и рефакторю legacy-код; использую SQL и диагностику приложения для анализа и проверки поведения.}
+      \resumeItem{Провожу code review изменений коллег и пишу или поддерживаю JUnit-тесты в рамках регулярной разработки и проверки изменений.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{ПРОЕКТНАЯ РАБОТА}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {finance-lab -- open-source лаборатория AgentOps}
+    {\href{https://github.com/anton415/finance-lab}{GitHub}}
+    {2026 -- настоящее время}
+    \resumeItemListStart
+      \resumeItem{Создал open-source приложение для личных финансов и инженерную лабораторию для экспериментов с надежной AI-agent-assisted разработкой.}
+      \resumeItem{Выстроил процесс, в котором coding agents реализуют и проверяют изменения, а человек сохраняет контроль над acceptance criteria, review, merge и внешними действиями.}
+      \resumeItem{В проекте задокументирован evaluation framework из 12 candidate tasks; для одной задачи проведена ручная калибровка grader с positive/negative controls.}
+      \resumeItem{Использую GitHub Actions, инструкции для агентов на уровне репозитория и Python-автоматизацию с разделением dry-run/live для наблюдаемого и контролируемого workflow.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{НАВЫКИ}
+\resumeLine{Разработка}{Java, Vaadin, SQL, JUnit, Git/GitLab, code review, debugging, legacy refactoring}
+\resumeLine{Backend / Workflow}{PostgreSQL, Camunda/BPMN, Mockito, Maven}
+\resumeLine{Delivery / инфраструктура}{GitHub Actions, CI/CD, Linux, базовая Python-автоматизация}
+\resumeLine{AI / Agent Engineering}{coding-agent workflows, eval design, human approval gates, AgentOps experiments}
+
+\section{ОБРАЗОВАНИЕ}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Московский авиационный институт (МАИ)}{2022}
+    {Магистратура: менеджмент, программа «Экономическая безопасность», факультет ИТ}{Москва}
+\resumeSubHeadingListEnd
+
+\section{ДОПОЛНИТЕЛЬНОЕ ОБУЧЕНИЕ}
+\small
+Camunda Academy -- BPMN Overview \sep
+Anthropic -- AI Fluency Framework \& Foundations \sep
+Anthropic -- Claude Code in Action
+
+\section{ЯЗЫКИ}
+\resumeLine{Русский}{родной}
+\resumeLine{Английский}{B2}
+
+\end{document}
