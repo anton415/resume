@@ -1,0 +1,33 @@
+name: Build resumes
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compile LaTeX resumes
+        uses: xu-cheng/latex-action@v3
+        with:
+          pre_compile: |
+            apk add --no-cache font-dejavu
+          root_file: |
+            resume-us.tex
+            resume-ch.tex
+            resume-ru.tex
+          latexmk_use_xelatex: true
+          args: -interaction=nonstopmode -halt-on-error
+
+      - name: Upload PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: resumes
+          path: |
+            resume-us.pdf
+            resume-ch.pdf
+            resume-ru.pdf
