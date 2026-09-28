@@ -1,0 +1,15 @@
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.xdv
+resume-us.pdf
+resume-ch.pdf
+resume-ru.pdf
+
+# Keep private source notes out of this public repository.
+private/
+*.private.md
+DATA_GAPS.md
