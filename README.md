@@ -3,7 +3,7 @@
 Public LaTeX resume sources for three job markets:
 
 - `resume-us.tex` — USA, US Letter, ATS-first.
-- `resume-ch.tex` — Europe with Switzerland as the primary market, A4.
+- `resume-uk.tex` — United Kingdom, A4, ATS-first.
 - `resume-ru.tex` — Russia, A4, Russian-language version.
 
 The layout is a compact, single-column, Jake-style resume implemented from scratch for readability and straightforward PDF text extraction.
@@ -24,7 +24,7 @@ Build a single variant:
 
 ```bash
 make resume-us.pdf
-make resume-ch.pdf
+make resume-uk.pdf
 make resume-ru.pdf
 ```
 
