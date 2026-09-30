@@ -1,6 +1,6 @@
 LATEXMK ?= latexmk
 LATEX_FLAGS = -xelatex -interaction=nonstopmode -halt-on-error
-TARGETS = resume-us.pdf resume-ch.pdf resume-ru.pdf
+TARGETS = resume-us.pdf resume-uk.pdf resume-ru.pdf
 
 .PHONY: all clean
 
@@ -11,6 +11,6 @@ all: $(TARGETS)
 
 clean:
 	$(LATEXMK) -C resume-us.tex
-	$(LATEXMK) -C resume-ch.tex
+	$(LATEXMK) -C resume-uk.tex
 	$(LATEXMK) -C resume-ru.tex
 	rm -f $(TARGETS)
