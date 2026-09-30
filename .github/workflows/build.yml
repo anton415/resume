@@ -18,7 +18,7 @@ jobs:
             apk add --no-cache font-dejavu
           root_file: |
             resume-us.tex
-            resume-ch.tex
+            resume-uk.tex
             resume-ru.tex
           latexmk_use_xelatex: true
           args: -interaction=nonstopmode -halt-on-error
@@ -29,5 +29,5 @@ jobs:
           name: resumes
           path: |
             resume-us.pdf
-            resume-ch.pdf
+            resume-uk.pdf
             resume-ru.pdf
